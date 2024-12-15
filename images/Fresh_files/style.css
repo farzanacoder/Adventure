@@ -1,0 +1,274 @@
+:root{
+    --primary: rgba(250, 227, 182, 1);
+    --secondary: rgba(207, 164, 133, 1);
+    --lightColor: rgba(254, 236, 200, 1);
+    --orangeColor: rgba(253, 187, 87, 1);
+    --whiteColor: rgba(255, 255, 255, 1);
+    --blackColor: rgba(0,0,0,1);
+    --defaultWidth: 80%;
+    --minWidth: 85rem;
+    --font_1: "Poppins", serif; 
+    --font_2: "Frank Ruhl Libre", serif;
+    --font_3: "Podkova", serif;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--blackColor);
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    background: var(--primary);
+    overflow-x: hidden;
+    /* width: 100%; */
+}
+
+/*********** menu_part start here ************/
+.container{
+    width: var(--defaultWidth);
+    margin: 0 auto;
+    background: var(--primary);
+}
+.navbar{
+    min-width: var(--minWidth);
+    padding: .6rem 0;
+    display: flex;
+}
+.logo{
+    width: 20%;
+}
+.logo h1{
+    font-family: var(--font_1);
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 3rem;
+}
+.nav{
+    width: 40%;
+
+}
+.nav ul{
+    display: flex;
+    justify-content: space-between;
+}
+.nav ul li{
+    padding: 1.2rem 0;
+}
+.nav ul li a{
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: var(--font_1);
+    padding: 1rem 1.5rem;
+    border-radius: .6rem;
+    transition: .5s ease-in-out;
+}
+.nav ul li a:hover{
+    background: var(--orangeColor);
+}
+.btn{
+    width: 20%;
+    padding: 1.2rem 0;
+    padding-left: 2rem;
+}
+.btn a{
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 1rem 1.5rem;
+    border-radius: .6rem;
+    box-shadow: .1rem .1rem .1rem .1rem rgba(148, 146, 146,0.5);
+    transition: .5s ease-in-out;
+}
+.btn a:hover{
+    background: var(--orangeColor);
+}
+
+/*********** hero_part start here ************/
+.hero{
+    display: flex;
+    padding: 5rem 0;
+}
+.banner_txt{
+    width: 100%;
+}
+.banner_img{
+    padding-left: 3rem;
+}
+ .banner_txt h1{
+    font-family: var(--font_1);
+    font-size: 64px;
+    font-weight: 700;
+    width: 434px;
+    color: var(--blackColor);
+    padding-bottom: 63px;
+ }
+ .banner_txt p{
+    font-family: var(--font_2);
+    font-size: 24px;
+    font-weight: 400;
+    width: 443px;
+    color: var(--blackColor);
+}
+.banner_txt a {
+        font-size: 1.5rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: var(--whiteColor);
+        background: var(--blackColor);
+        font-family: var(--font_1);
+        padding: 1.5rem 5rem;
+        border-radius: 1rem;
+        margin: 6rem 0;
+        display: inline-block;
+}
+/*********** card_part start here ************/
+.collection{
+    padding: 200px 0;
+}
+.card{
+    width: 350px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+}
+.card_1 img{
+    width: 100%;
+    height: 100%;
+}
+.card_1 .overlay{
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0,0.4);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 300px 0 0 20px;
+    border-radius: 20px;
+    transition: .4s ease-in-out;
+}
+.card:hover .overlay{
+    top: 0;
+}
+.overlay a{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--blackColor);
+    background: var(--whiteColor);
+    font-family: var(--font_1);
+    padding: 9px 108px;
+    border-radius: 20px;
+}
+h2{
+    font-family: var(--font_2);
+    font-size: 64px;
+    font-weight: 700;
+    color: var(--blackColor);
+    text-align: center;
+}
+
+/*********** fashion_part start here ************/
+.fashion{
+    display: flex;
+    align-items: center;
+    padding-bottom: 200px;
+}
+.fashion_img{
+    width: 50%;
+}
+.fashion_txt{
+    width: 50%;
+    padding-left: 100px;
+}
+.fashion_txt h1{
+    font-family: var(--font_2);
+    font-size: 64px;
+    font-weight: 700;
+    width: 434px;
+    color: var(--blackColor);
+    padding-bottom: 63px;
+}
+.fashion_txt p{
+    font-family: var(--font_2);
+    font-size: 24px;
+    font-weight: 600;
+    width: 443px;
+    color: var(--blackColor);
+}
+
+/*********** prdct_part start here ************/
+.prdct{
+    display: flex;
+}
+.prdct_1{
+    display: flex;
+    justify-content: space-between;
+}
+.prdct_txt{
+    width: 40%;
+}
+.prdct_txt h1{
+    font-family: var(--font_2);
+    font-size: 64px;
+    font-weight: 700;
+    width: 434px;
+    color: var(--blackColor);
+    padding-bottom: 63px;
+}
+.prdct_txt p{
+    font-family: var(--font_2);
+    font-size: 24px;
+    font-weight: 400;
+    width: 443px;
+    color: var(--blackColor);
+}
+.prdct_txt a {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--whiteColor);
+    background: var(--blackColor);
+    font-family: var(--font_1);
+    padding: 1.5rem 5rem;
+    border-radius: 1rem;
+    margin: 6rem 0;
+    display: inline-block;
+}
+.prdct_img {
+    width: 60%;
+}
+.prdct_1{
+    background: white;
+    width: 366px;
+    height: 551px;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    display: block;
+
+}
+.prdct_1 img{
+    width: 100%;
+    height: 75%;
+}
+.margin{
+    padding: 14px 0 9px 22px;
+}
+.prdct_1 h3{
+    font-family: var(--font_1);
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--blackColor);
+    padding-top: 12px;
+}
+
+.p_num{
+    display: flex;
+    column-gap: 31px;
+}
+/* .icon{
+    display: flex;
+    column-gap: 7px;
+}
+.icon i{
+    color: orange;
+} */
